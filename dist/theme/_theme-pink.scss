@@ -1,0 +1,23 @@
+  // //Foreground palette
+  $primary-text: #505050;
+  $primary-text-dark: #000000;
+  $secondary-text: #7b7b7b;
+  $hint-text: #adadad;
+  $contrast-text: #ffffff; // //Background palette
+  $background: #ffffff;
+  $background-darker: #f5f5f5;
+  $background-hover: #f5f5f5; // $background-darker-hover: #e5e5e5;
+  $border: #e5e5e5;
+  $shadow: rgba(0, 0, 0, 0.16);
+  $shadow-dark: rgba(0, 0, 0, 0.4);
+  $overlay: rgba(33, 33, 33, 0.4); //Control palette
+  $control-base: #aaaaaa;
+  $control-primary: #a80068;
+  $control-primary-bright: #a80068;
+  $control-primary-dark: darken($control-primary, 10%);
+  $control-primary-darkest: darken($control-primary, 10%);
+  $control-disabled: #adadad;
+  $control-accent: #d87db4;
+  $control-accent-contrast: #03E55E; //Warn palette
+  $error: #fd3030;
+  $warning: #ff9100;

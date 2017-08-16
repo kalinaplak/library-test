@@ -1,0 +1,14 @@
+{
+  "name": "@comarch/library",
+  "author": "Comarch",
+  "version": "1.0.0",
+  "license": "ISC",
+  "module": "library.es5.js",
+  "es2015": "library.js",
+  "typings": "library.d.ts",
+  "peerDependencies": {
+    "@angular/core": "4.0.0",
+    "rxjs": "^5.3.0",
+    "zone.js": "^0.8.5"
+  }
+}
