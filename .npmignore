@@ -1,0 +1,22 @@
+# Node generated files
+node_modules
+npm-debug.log
+
+# OS generated files
+Thumbs.db
+.DS_Store
+
+# Ignored files
+*.ts
+!*.d.ts
+*.sh
+*.ps1
+/src
+/tools
+/build
+/bundle
+gulpfile.js
+tsconfig-build.json
+tsconfig-es5.json
+tsconfig-umd.json
+tsconfig.json

@@ -2,20 +2,35 @@
   "name": "@comarch/library",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/library.umd.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "del": "npm-run-all del-dist del-bundle del-build",
+    "del-dist": "shx rm -rf ./dist",
+    "del-bundle": "shx rm -rf ./bundle",
+    "del-build": "shx rm -rf ./build",
+    "build-umd": "npm run del-bundle && tsc -p tsconfig-umd.json && node ./tools/make-umd-bundle.js"
   },
   "author": "Comarch",
   "license": "ISC",
+  "module": "./dist/library.es5.js",
+  "es2015": "./dist/library.js",
+  "typings": "./dist/library.d.ts",
   "devDependencies": {
     "@angular/compiler": "4.0.0",
     "@angular/compiler-cli": "4.0.0",
     "@angular/core": "4.0.0",
     "gulp": "^3.9.1",
+    "npm-run-all": "^4.0.2",
     "rollup": "^0.41.6",
     "rxjs": "^5.3.0",
+    "shx": "^0.2.2",
+    "tslib": "^1.7.1",
     "typescript": "^2.2.2",
+    "zone.js": "^0.8.5"
+  },
+  "peerDependencies": {
+    "@angular/core": "4.0.0",
+    "rxjs": "^5.3.0",
     "zone.js": "^0.8.5"
   }
 }
